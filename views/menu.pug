@@ -1,0 +1,62 @@
+extends layout
+
+
+mixin listOfPizza
+    ul
+    - const pizzaArray = [{name:'MARGHERITA', des:'Fresh tomatoes, fresh mozzarella, fresh basil', price:'$12.50'}, {name:'FORMAGGIO', des:'Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)', price:'$15.50'}, {name:'CHICKEN', des:'Fresh tomatoes, mozzarella, chicken, onions', price:'$17.00'}, {name:'MEAT TOWN', des:'Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken', price:'$20.00'}]
+        each item in pizzaArray
+            h4.list-name= item.name
+            li.list-price= item.price
+            li.list-des= item.des
+
+
+mixin listOfSalad
+    ul
+    - const saladArray = [{name:'Lasagna', des:'Special sauce, mozzarella, parmesan, ground beef', price:'$13.50'}, {name:'Ravioli', des:'Ravioli filled with cheese', price:'$14.50'}, {name:'Spaghetti Classica', des:'Fresh tomatoes, onions, ground beef', price:'$11.00'}, {name:'Seafood pasta', des:'Salmon, shrimp, lobster, garlic', price:'$25.50'}]
+        each item in saladArray
+                h4.list-name= item.name
+                li.list-price= item.price
+                li.list-des= item.des
+
+
+mixin listOfStarter
+    ul
+    - const starterArray = [{name:`Today's Soup`, des:'Ask the waiter', price:'$5.50'}, {name:'Bruschetta ', des:'Bread with pesto, tomatoes, onion, garlic', price:'$8.50'}, {name:'Garlic bread', des:'Grilled ciabatta, garlic butter, onions', price:'$9.50'}, {name:'Tomozzarella', des:'Tomatoes and mozzarella', price:'$10.50'}]
+        each item in starterArray
+            h4.list-name= item.name
+            li.list-price= item.price
+            li.list-des= item.des
+
+
+append Main
+    section.menu-sec
+        h2.menu-brand THE MENU
+        #menu-div
+            .buttons
+                button(href='#', class='Btn active' onclick="toggleVisibility('menu1');") PIZZA
+                button(href='#', class='Btn' onclick="toggleVisibility('menu2');") SALAD
+                button(href='#', class='Btn' onclick="toggleVisibility('menu3');") STARTER
+            #menu1 
+                +listOfPizza
+            #menu2(style='display: none;') 
+                +listOfSalad
+            #menu3(style='display: none;') 
+                +listOfStarter
+
+//- 
+//- 
+//- 
+
+//- section.menu-sec
+//-         h2.menu-brand THE MENU
+//-         div#menu-div
+//-             button(class='Btn active' data-rel='#content-a') PIZZA
+//-             button(class='Btn'  data-rel='#content-b') SALAD
+//-             button(class='Btn'  data-rel='#content-c') STARTER
+//-             div
+//-                 div(class='container' id='content-a')
+//-                     +listOfPizza
+//-                 div(class='container' id='content-b')
+//-                     +listOfSalad
+//-                 div(class='container' id='content-c')
+//-                     +listOfStarter

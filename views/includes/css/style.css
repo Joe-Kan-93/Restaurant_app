@@ -1,0 +1,211 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  height: 5%;
+  display: flex;
+  background-color: black;
+  opacity: 0.5;
+}
+
+nav:hover {
+  background-color: black;
+  opacity: 1;
+}
+
+nav a {
+  color: white;
+  padding: 15px 1%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: black;
+  background-color: lightgray;
+}
+
+#homepage {
+  text-align: center;
+  height: 95vh;
+  background-image: url("https://images.unsplash.com/photo-1531914082256-1b9047242426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80");
+}
+
+.brand {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  padding-top: 15%;
+  margin: 0;
+}
+
+#homepage button {
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  height: 8%;
+  width: 20%;
+  border: none;
+}
+
+#homepage button:hover {
+  color: black;
+  background-color: lightgray;
+}
+
+#homepage p {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin: 1%;
+  padding: 1%;
+  background-color: black;
+}
+
+/**/
+/**/
+/**/
+
+.menu-sec {
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+  height: 120%;
+}
+
+.menu-brand {
+  font-size: 3rem;
+  color: white;
+  padding: 5% 0;
+  margin: 0;
+}
+
+#menu-div {
+  position: relative;
+  height: 80vh;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+}
+
+#menu-div button {
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  height: 10%;
+  width: 33.33%;
+  border: none;
+}
+
+#menu-div button:hover {
+  background-color: orangered;
+}
+
+#menu-div .active {
+  background-color: orangered;
+}
+
+.list-name,
+.list-des,
+.list-price {
+  padding: 1%;
+  list-style: none;
+}
+
+.list-name {
+  text-align: left;
+}
+.list-des {
+  text-align: left;
+}
+.list-price {
+  text-align: right;
+}
+
+/**/
+/**/
+/**/
+
+.about-sec {
+  background-color: lightcoral;
+  height: 150%;
+}
+
+.about-brand {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  padding: 5% 0;
+  margin: 0;
+}
+
+.about-div {
+  height: 80vh;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: transparent;
+}
+
+.about-div p {
+  color: white;
+  text-align: start;
+}
+
+.about-div h2 {
+  color: white;
+}
+
+.intro-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-1 .name {
+  font-weight: bold;
+}
+
+.intro-2 {
+  padding-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.background {
+  background-image: url("../img/");
+}
+
+/**/
+/**/
+/**/
+
+.contact-sec {
+  background-color: gray;
+  height: 95vh;
+}
+
+.contact-brand {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  padding: 5% 0;
+  margin: 0;
+}
+
+.contact-div {
+  height: 60vh;
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  background-color: transparent;
+}
